@@ -47,6 +47,10 @@ app.use('/bookingservice', createProxyMiddleware({
 
 }));
 
+app.get('/home',(req,res)=>{
+    return res.json({message : "ok"})
+})
+
 
 
 app.listen(PORT, async () => {
